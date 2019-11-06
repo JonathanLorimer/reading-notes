@@ -16,7 +16,13 @@
 - Biconditional (<=>) expresses equivalents and can be destructured like so `a <=> b ~ a => b & b => a`
 
 ## 2.4 Quantifiers
--
+- Existential Quantification: `∃x` means that there is some `x` such that
+- Universal Quantification: `∀x` means for every x
+- Negation rules:
+  - inverse of `∀x Yx` is `∃x ¬Yx`
+      - colloquialy: for every x predicate Y applies v.s. there is some x for which predicate Y does not apply
+  - inverse of `∃x Yx` is `∀x ¬Yx`
+      - colloquially: there is some x for which predicate Y applies v.s. for every x predicate Y does not apply
 
 ## 2.1.1 Exercises
 1. Come up with a counter-example or contradiction, but there isn't one
