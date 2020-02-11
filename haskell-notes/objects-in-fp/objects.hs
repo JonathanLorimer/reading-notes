@@ -11,6 +11,18 @@ data Shape a = Shape { getX    :: IO a
                      , rMoveTo ::  a -> a -> IO ()
                      }
 
+data Rectangle a = Rectangle { getWidth  :: IO a
+                             , getHeight :: IO a
+                             , setWidth  :: a -> IO ()
+                             , setHeight :: a -> IO ()
+                             , draw      :: IO ()
+                             , getX      :: IO a
+                             , getY      :: IO a
+                             , setX      :: a -> IO a
+                             , setY      :: a -> IO a
+                             , moveTo    :: a -> a -> IO a
+                             , rMoveTo   :: a -> a -> IO a
+                             }
 -- data Q a = forall m. Quasi m => Q { unQ :: m a }
 
 shape :: Int -> Int -> IO (Shape Int)
@@ -64,7 +76,7 @@ rectangle x y width height = do
                       , rMoveTo = rMoveTo
                       }
 
-  shape 100 100
+  return $ rec $ shape 100 100
 
 
 myShape :: IO (Shape Int)
