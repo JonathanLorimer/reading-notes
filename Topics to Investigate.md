@@ -1,0 +1,2 @@
+- [[20200301211131]] ListT and commutative monads
+- [[20200301224548]] functional dependencies
