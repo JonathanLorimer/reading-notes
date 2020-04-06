@@ -1,3 +1,3 @@
-- [[20200301211131]] ListT and commutative monads
-- [[20200301224548]] functional dependencies
-- [[20200304142439]] Initial style and final style encodings
+- ListT and commutative monads
+- functional dependencies
+- Initial style and final style encodings
